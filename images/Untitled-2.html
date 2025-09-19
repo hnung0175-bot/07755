@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาหารคลีน - หน้าสอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6ec; /* ครีมอ่อน */
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        header {
+            background: #d9b38c; /* ครีมออกน้ำตาล */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #a67c52 3px solid; /* น้ำตาลเข้ม */
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #c69c6d; /* ครีมโทนน้ำตาล */
+        }
+
+        nav td {
+            text-align: center;
+            padding: 15px 0;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 20%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        nav td:hover {
+            background: #a67c52; /* น้ำตาลเข้มเมื่อ hover */
+        }
+
+        nav td.active {
+            background: #d9b38c; /* ครีมเข้ม */
+        }
+
+        .main-content {
+            padding: 20px;
+            background: #fffaf0; /* ครีมอ่อน */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(166, 124, 82, 0.2);
+            margin-top: 20px;
+        }
+
+        /* แก้ไข flex ให้รูปอยู่ติดกัน */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .image-gallery .image-item {
+            flex: 0 0 49%;
+            text-align: left;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-gallery h3 {
+            margin-top: 10px;
+            color: #6d4c41; /* น้ำตาลนวลๆ */
+        }
+
+        .image-gallery ul {
+            padding-left: 20px;
+        }
+
+        .image-gallery li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-wrap: wrap;
+            }
+            .image-gallery .image-item {
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>อาหารคลีน</h1>
+    <nav>
+        <table>
+            <tr>
+                <td>หน้าหลัก</td>
+                <td class="active">เกี่ยวกับอาหารคลีน</td>
+                <td>เมนูอาหาร</td>
+                <td>บทความสุขภาพ</td>
+                <td>ติดต่อเรา</td>
+            </tr>
+        </table>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="main-content">
+        <h2>อาหารคลีน</h2>
+        <div class="image-gallery">
+            <!-- รูปและข้อความที่ 1 -->
+            <div class="image-item">
+                <img src="images/อาหารคลีน_1.jpg" alt="รูปภาพใหญ่"> 
+                <h3>ความหมายของอาหารคลีน</h3>
+                <p>อาหารคลีนคืออาหารที่ผ่านกระบวนการแปรรูปน้อยที่สุด เน้นวัตถุดิบจากธรรมชาติ เช่น ผักสด ผลไม้ ธัญพืชไม่ขัดสี โปรตีนคุณภาพสูง และหลีกเลี่ยงการใช้สารกันบูด สีสังเคราะห์ และน้ำตาลทรายขาว</p>
+            </div>
+
+            <!-- รูปและข้อความที่ 2 -->
+            <div class="image-item">
+                <img src="images/clean-food.jpg" alt="รูปภาพใหญ่"> 
+                <h3>หลักการกินอาหารคลีน</h3>
+                <ul>
+                    <li><strong>เลือกวัตถุดิบสดใหม่:</strong> เน้นผัก ผลไม้ ธัญพืช และโปรตีนจากแหล่งธรรมชาติ</li>
+                    <li><strong>หลีกเลี่ยงอาหารแปรรูป:</strong> เช่น อาหารสำเร็จรูป ขนมขบเคี้ยว และอาหารที่มีสารกันบูด</li>
+                    <li><strong>ปรุงอาหารด้วยวิธีที่ดีต่อสุขภาพ:</strong> เช่น การนึ่ง ต้ม อบ หรือย่าง แทนการทอด</li>
+                    <li><strong>ควบคุมปริมาณน้ำตาลและไขมัน:</strong> หลีกเลี่ยงน้ำตาลทรายขาวและไขมันทรานส์</li>
+                </ul>
+            </div>
+
+            <!-- รูปและข้อความที่ 3 -->
+            <div class="image-item">
+                <img src="file:///D|/สร้างเว็บไซต์/Screenshot 2025-09-16 145800.png" alt="รูปภาพใหญ่">
+                <h3>ประเภทของอาหารคลีน</h3>
+                <ul>
+                    <li><strong>ผักและผลไม้:</strong> ควรกินหลากหลายสีและชนิด เพื่อให้ได้สารอาหารครบถ้วน</li>
+                    <li><strong>โปรตีน:</strong> เช่น ไก่ไม่ติดหนัง ปลา ไข่ เต้าหู้ และถั่วต่าง ๆ</li>
+                    <li><strong>คาร์โบไฮเดรต:</strong> เช่น ข้าวกล้อง ข้าวโอ๊ต มันเทศ และธัญพืชไม่ขัดสี</li>
+                    <li><strong>ไขมันดี:</strong> เช่น อะโวคาโด น้ำมันมะกอก และถั่วต่าง ๆ</li>
+                </ul>
+            </div>
+
+            <!-- รูปและข้อความที่ 4 -->
+            <div class="image-item">
+                <img src="images/hq720.jpg" alt="รูปภาพใหญ่">
+                <h3>ตัวอย่างเมนูอาหารคลีน</h3>
+                <ul>
+                    <li><strong>อาหารเช้า:</strong> ข้าวโอ๊ตกับนมอัลมอนด์และผลไม้สด</li>
+                    <li><strong>อาหารกลางวัน:</strong> ข้าวกล้องกับไก่ย่างและสลัดผัก</li>
+                    <li><strong>อาหารเย็น:</strong> ปลาอบสมุนไพรกับผักนึ่ง</li>
+                    <li><strong>ของว่าง:</strong> ถั่วอบหรือโยเกิร์ตไม่มีน้ำตาล</li>
+                </ul>
+            </div>
+
+            <!-- รูปและข้อความที่ 5 -->
+            <div class="image-item">
+                <img src="images/อาหารคลีน5-600x330.jpg" alt="รูปภาพใหญ่">
+                <h3>ข้อดีของอาหารคลีน</h3>
+                <ul>
+                    <li><strong>ช่วยควบคุมน้ำหนัก:</strong> เนื่องจากมีแคลอรีต่ำและให้พลังงานยาวนาน</li>
+                    <li><strong>ดีต่อสุขภาพหัวใจ:</strong> ลดความเสี่ยงจากโรคหัวใจและหลอดเลือด</li>
+                    <li><strong>ระบบย่อยอาหารดีขึ้น:</strong> เนื่องจากมีไฟเบอร์สูง</li>
+                    <li><strong>ผิวพรรณดีขึ้น:</strong> ลดการเกิดสิวและทำให้ผิวดูสดใส</li>
+                    <li><strong>ลดความเสี่ยงโรคเรื้อรัง:</strong> เช่น เบาหวาน ความดันโลหิตสูง และมะเร็งบางชนิด</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
